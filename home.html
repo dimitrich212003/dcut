@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onresize="responsiveFonts()">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__logo">
+					<img src="img/logo.svg" alt="" />
+				</div>
+				<div class="page__main-img">
+					<img src="img/builders.jpg" alt="" />
+				</div>
+				<div class="page__title title">
+					<h1>ЖК "Пресня Сити"</h1>
+				</div>
+				<section class="techCons">
+					<div class="techCons__wrapper">
+						<div class="techCons__title">Ваш Технический консультант</div>
+						<div class="techCons__row">
+							<div class="techCons__img">
+								<img src="img/man.png" alt="" />
+							</div>
+							<div class="techCons__contacts">
+								<div class="techCons__name">Имя</div>
+								<div class="techCons__number">+7 999 99 99 99</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="economy">
+					<div class="economy__title title">
+						ВАША ЭКОНОМИЯ ЗА 12 МЕСЯЦЕВ ПРИ СОТРУДНИЧЕСТВЕ С DCUT
+					</div>
+					<div class="economy__chart">
+						<canvas id="myChartEconomy" width="960" height="300"></canvas>
+					</div>
+					<div class="economy__note">
+						* снизу указана экономия на доставках при заказе через DCUT
+					</div>
+					<div class="economy__text-vip vip">
+						<span>VIP услуга</span> "Расширенная кредитная линия и упрощенный
+						процесс согласования кредитных отгрузок" Вам доступно увеличение
+						вашего кредитного лимита на 30%
+					</div>
+				</section>
+				<section class="park">
+					<div class="park__title title">
+						ВАШ ПАРК ИНСТРУМЕНТА DCUT С МОМЕНТА ПЕРВОЙ ПОКУПКИ ПО ОКТЯБРЬ 2022
+						(ШТ)
+					</div>
+					<div class="park__row-chart row-chart">
+						<div class="park__chart">
+							<canvas id="myChart" width="600" height="450"></canvas>
+						</div>
+						<div class="park__chart-reverse">
+							<canvas id="myChartReverse" width="800" height="450"></canvas>
+						</div>
+					</div>
+				</section>
+				<section class="fiveStar">
+					<div class="fiveStar__title title">СЕРВИС 5 ЗВЕЗД</div>
+					<div class="fiveStar__grid grid">
+						<div class="fiveStar__grid-body grid-body">
+							<div class="fiveStar__grid-item grid-item blue"></div>
+							<div class="fiveStar__grid-item grid-item blue">
+								Кол-во ремонтов
+							</div>
+							<div class="fiveStar__grid-item grid-item blue">
+								Стоимость ремонтов для клиента (руб)
+							</div>
+							<div class="fiveStar__grid-item grid-item blue">
+								Полная стоимость ремонтов (руб)
+							</div>
+							<div class="fiveStar__grid-item grid-item blue">
+								Среднее время ремонта (дни)
+							</div>
+							<div class="fiveStar__grid-item grid-item blue">
+								Возврат без ремонта (шт)
+							</div>
+							<div class="fiveStar__grid-item grid-item">
+								Сервисное обслуживание до 2-х лет «Все включено»
+							</div>
+							<div class="fiveStar__grid-item grid-item">838</div>
+							<div class="fiveStar__grid-item grid-item">0</div>
+							<div class="fiveStar__grid-item grid-item">5 436 031</div>
+							<div class="fiveStar__grid-item grid-item">3,3</div>
+							<div class="fiveStar__grid-item grid-item big-item">1</div>
+							<div class="fiveStar__grid-item grid-item">
+								Сервисное обслуживание за пределами «Все включено»
+							</div>
+							<div class="fiveStar__grid-item grid-item">3 203 013</div>
+							<div class="fiveStar__grid-item grid-item">3 604 277</div>
+							<div class="fiveStar__grid-item grid-item">4,4</div>
+							<div class="fiveStar__grid-item grid-item">695</div>
+						</div>
+					</div>
+					<div class="fiveStar__note">
+						<p>
+							* Средняя продолжительность при бесплатных ремонтах составляет
+							<span class="vipi">3,3 д.</span>
+						</p>
+						<p>
+							* При платных ремонтах время ремонта увеличивается до
+							<span class="vipi">4,1 д.</span>, так как уходит время на
+							согласование оплаты.
+						</p>
+						<p>
+							* При согласовании счетов было потеряно
+							<span class="vipi">546 д.</span>
+						</p>
+						<p>
+							Для того, чтобы сократить потери дней при платных ремонтах,
+							необходимо согласовать ограничение стоимости ремонта (данная
+							информация доступна на сайте DCUT)
+						</p>
+					</div>
+					<div class="fiveStar__text-vip vip">
+						<span>VIP услуга</span> "Подменный парк оборудования"
+					</div>
+				</section>
+				<section class="detal">
+					<div class="detal__title title">
+						ДЕТАЛИЗАЦИЯ ПО ВАШИМ РЕМОНТАМ В СООТВЕТСТВИИ С ВОЗРАСТОМ
+						ИНСТРУМЕНТА
+					</div>
+					<div class="detal__row-chart row-chart">
+						<div class="detal__chart">
+							<div class="detal__chart-title">Количество ремонтов (шт)</div>
+							<canvas id="myChartDetal1" width="700" height="450"></canvas>
+							<div class="detal__subtitle-row">
+								<div class="detal__subtitle-item">Бесплатные ремонты</div>
+								<div class="detal__subtitle-item grey">Платные ремонты</div>
+							</div>
+						</div>
+						<div class="detal__chart">
+							<div class="detal__chart-title">
+								Стоимость ремонтов [тыс.руб.]
+							</div>
+							<canvas id="myChartDetal2" width="700" height="450"></canvas>
+							<div class="detal__subtitle-row">
+								<div class="detal__subtitle-item">Экономия клиента</div>
+								<div class="detal__subtitle-item grey">Платные ремонты</div>
+							</div>
+						</div>
+					</div>
+					<div class="detal__grid grid">
+						<div class="detal__grid-body grid-body">
+							<div class="detal__grid-item grid-item blue-detal">
+								Категория инструмента
+							</div>
+							<div class="detal__grid-item grid-item blue-detal">
+								Стоимость платных ремонтов (тыс.руб)
+							</div>
+							<div class="detal__grid-item grid-item blue-detal">
+								Кол-во платных ремонтов
+							</div>
+							<div class="detal__grid-item grid-item blue-detal">
+								Средняя стоимость 1 ремонта (руб)
+							</div>
+							<div class="detal__grid-item grid-item">Легкие инструменты</div>
+							<div class="detal__grid-item grid-item">1436</div>
+							<div class="detal__grid-item grid-item">498</div>
+							<div class="detal__grid-item grid-item">2 884</div>
+							<div class="detal__grid-item grid-item">
+								Тяжелые инструменты
+							</div>
+							<div class="detal__grid-item grid-item">1767</div>
+							<div class="detal__grid-item grid-item">197</div>
+							<div class="detal__grid-item grid-item">8 969</div>
+							<div class="detal__grid-item grid-item blue-detal">Итого</div>
+							<div class="detal__grid-item grid-item blue-detal">3 203</div>
+							<div class="detal__grid-item grid-item blue-detal">695</div>
+							<div class="detal__grid-item grid-item blue-detal"></div>
+						</div>
+					</div>
+				</section>
+				<section class="top">
+					<div class="top__title title">
+						ТОП 10 ИНСТРУМЕНТОВ, РЕКОМЕНДУЕМЫХ К ЗАМЕНЕ ПО ПРОГРАММЕ TRADE-IN
+					</div>
+					<div class="top__grid grid">
+						<div class="top__grid-body grid-body">
+							<div class="top__grid-item grid-item blue-detal">
+								Серийный номер инструмента
+							</div>
+							<div class="top__grid-item grid-item blue-detal">
+								Наименование инструмента
+							</div>
+							<div class="top__grid-item grid-item blue-detal">
+								Дата покупки
+							</div>
+							<div class="top__grid-item grid-item blue-detal borderRig-none">
+								Кол-во платных ремонтов
+							</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item">300058815265</div>
+							<div class="top__grid-item grid-item">Название</div>
+							<div class="top__grid-item grid-item">APR 2016</div>
+							<div class="top__grid-item grid-item borderRig-none">11</div>
+
+							<div class="top__grid-item grid-item borderBot-none">
+								300058815265
+							</div>
+							<div class="top__grid-item grid-item borderBot-none">
+								Название
+							</div>
+							<div class="top__grid-item grid-item borderBot-none">
+								APR 2016
+							</div>
+							<div class="top__grid-item grid-item borderBot-none borderRig-none">
+								11
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="new">
+					<div class="new__title title">НОВИНКИ DCUT 2022</div>
+					<div class="new__myGrid">
+						<div class="new__myGrid-row">
+							<div class="new__myGrid-item drel"></div>
+							<div class="new__myGrid-item drel"></div>
+						</div>
+						<div class="new__myGrid-row">
+							<div class="new__myGrid-item bolgar"></div>
+							<div class="new__myGrid-item bolgar"></div>
+						</div>
+						<div class="new__myGrid-row">
+							<div class="new__myGrid-item cirkular"></div>
+							<div class="new__myGrid-item cirkular"></div>
+						</div>
+					</div>
+				</section>
+				<section class="mater">
+					<div class="mater__title title">
+						РАСХОДНЫЕ МАТЕРИАЛЫ (КУПЛЕННЫЕ ЗА 12 МЕСЯЦЕВ)
+					</div>
+					<div class="mater__grid-row">
+						<div class="mater__grid grid">
+							<div class="mater__grid-body grid-body">
+								<div class="mater__grid-item grid-item blue-mater">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item blue-mater">
+									Кол-во
+								</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+							</div>
+						</div>
+						<div class="mater__grid grid">
+							<div class="mater__grid-body grid-body">
+								<div class="mater__grid-item grid-item blue-mater">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item blue-mater">
+									Кол-во
+								</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item">Кол-во</div>
+								<div class="mater__grid-item grid-item borderBot-none">
+									Наименование группы продукта
+								</div>
+								<div class="mater__grid-item grid-item borderBot-none">
+									Кол-во
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="digitService">
+					<div class="digitService__title title">
+						Современные цифровые сервисы DCUT
+					</div>
+					<div class="digitService__myGrid">
+						<div class="digitService__myGrid-row">
+							<div class="digitService__myGrid-item proPark">
+								Подписка «ProPark»
+							</div>
+							<div class="digitService__myGrid-item sc1"></div>
+						</div>
+						<div class="digitService__myGrid-row">
+							<div class="digitService__myGrid-item sklad">
+								Цифровые интеграции: «Склад»
+							</div>
+							<div class="digitService__myGrid-item sc2"></div>
+						</div>
+						<div class="digitService__myGrid-row">
+							<div class="digitService__myGrid-item docum">
+								Цифровые интеграции: «Документооборот»
+							</div>
+							<div class="digitService__myGrid-item sc3"></div>
+						</div>
+					</div>
+				</section>
+				<section class="net">
+					<div class="net__title title">СЕТЬ КАНАЛОВ ПРОДАЖ</div>
+					<div class="net__row-grid">
+						<div class="net__grid grid">
+							<div class="net__grid-body grid-body">
+								<div class="net__grid-item grid-item bigp">
+									Доступно круглосуточно. Экономия на доставках 30%
+								</div>
+								<div class="net__grid-item grid-item">Количество заказов</div>
+								<div class="net__grid-item grid-item">818</div>
+								<div class="net__grid-item grid-item">
+									Экономия при доставках (руб)
+								</div>
+								<div class="net__grid-item grid-item">330 250</div>
+							</div>
+						</div>
+						<div class="net__grid grid">
+							<div class="net__grid-body grid-body">
+								<div class="net__grid-item grid-item">
+									Профессиональная консультация по Продуктам и Сервисам DCUT
+								</div>
+								<div class="net__grid-item grid-item">Количество заказов</div>
+								<div class="net__grid-item grid-item">818</div>
+								<div class="net__grid-item grid-item">
+									Экономия при доставках (руб)
+								</div>
+								<div class="net__grid-item grid-item">330 250</div>
+							</div>
+						</div>
+						<div class="net__grid grid">
+							<div class="net__grid-body grid-body">
+								<div class="net__grid-item grid-item">
+									Консультация и демонстрация инструмента на объекте и в офисе
+								</div>
+								<div class="net__grid-item grid-item">Количество заказов</div>
+								<div class="net__grid-item grid-item">818</div>
+								<div class="net__grid-item grid-item">
+									Экономия при доставках (руб)
+								</div>
+								<div class="net__grid-item grid-item">330 250</div>
+							</div>
+						</div>
+					</div>
+					<div class="net__text">
+						Также есть возможность самовывоза вашего заказа с терминала
+						транспортной компании.
+						<span>Вы сами можете планировать время забора (бесплатное хранение на
+							терминале до 7 дней). Стоимость доставки до терминала на 40%
+							ниже стандартной доставки.</span>
+					</div>
+				</section>
+				<section class="delivery">
+					<div class="delivery__title title">
+						ДОСТАВКА (ВКЛЮЧАЯ РЕМОНТНЫЕ ДОСТАВКИ)
+					</div>
+					<div class="delivery__row">
+						<div class="delivery__item">Готовая продажа</div>
+						<div class="delivery__item">1178</div>
+					</div>
+					<div class="delivery__row">
+						<div class="delivery__item">Ремонты</div>
+						<div class="delivery__item">1174</div>
+					</div>
+					<div class="delivery__row">
+						<div class="delivery__item">
+							Доставка (включая ремонтные доставки)
+						</div>
+						<div class="delivery__item">469 600</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.1.0/dist/chartjs-plugin-datalabels.min.js"></script>
+	<script src="js/app.min.js"></script>
+	<script>
+		function responsiveFonts() {
+			if (window.outerWidth < 1400) {
+				Chart.defaults.font.size = 12;
+			}
+			if (window.outerWidth < 550) {
+				Chart.defaults.font.size = 8;
+			}
+		}
+	</script>
+</body>
+
+</html>
